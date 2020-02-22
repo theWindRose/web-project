@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单</title>
+</head>
+<body>
+    <!-- 
+        form；表单
+        action：提交地址
+        method：发送数据的方式（POST/GET）
+        在form表单中凡是需要与用户交互的部分都需要设置name
+     -->
+    <!-- 
+        input；输入
+        type：输入类型，text，password，radio,checkbox,submit,reset,button
+    -->
+    <form name="" action="" method="">
+        用户名：<input name="username" type="text"><br>
+
+        密码：<input name="password" type="password"><br>
+
+        <!-- 
+            单选按钮:radio
+            同一组的单选按钮必须设置相同的name值
+         -->
+         <!-- 
+            对表单元素的优化：
+            lable标签：将佛如属性的值与表单元素的id设置一样
+            默认选中：checked（radio与checkbox中）
+         -->
+        <div>
+            <input id="man" type="radio" name="sex">
+            <label for="man">男</label>
+
+            <input id="women" type="radio" name="sex">
+            <label for="women">女</label>
+
+            <input id="NULL" type="radio" name="sex">
+            <label for="NULL">中性</label>
+        </div>
+
+        <!-- checkbox -->
+        <div>
+            <input id="css" type="checkbox">
+            <label for="css">css</label>
+
+            <input id="js" type="checkbox">
+            <label for="js">js</label>
+
+            <input id="html" type="checkbox">
+            <label for="html">html</label>
+        </div>
+
+        <!-- 按钮 -->
+        <div>
+            <input type="submit" value="登陆">
+            <input type="reset" value="重置">
+            <input type="button" value="按钮">
+        </div>
+
+
+        <div>
+            
+            <label for="m">男<input id="m" type="radio" name="s"></label> 
+            <label for="w">女<input id="w" type="radio" name="s"></label>
+            <label for="N">中性<input id="N" type="radio" name="s"></label>
+                       
+            <label>男<input id="m" type="radio" name="s"></label> 
+            <label>女<input id="w" type="radio" name="s"></label>
+            <label>中性<input id="N" type="radio" name="s"></label>
+        </div>
+
+        <!-- 
+            下拉菜单：select
+            下拉选项：option
+            默认选中：selected
+         -->
+        <select name="" id="">
+            <option value="1" >china</option>
+            <option value="2">english</option>
+            <option value="3">3</option>
+            <option value="4" >4</option>
+        </select>
+
+        <!-- 
+            文本输入域
+            style="resize:none":禁止输入域拉伸
+         -->
+         <textarea name="" id="" cols="30" rows="10" style="resize:none"></textarea>    
+         
+         <!-- 上传文件 -->
+         <input type="file">
+
+         <!-- 只读 -->
+         <input type="text" value="这是个只读框" readonly>
+
+         <!-- 禁止使用 -->
+         <input type="button" value="禁止使用" disabled>
+
+         <!-- 占位 -->
+         <input type="text" value="" placeholder="请输入中文">
+
+         <!-- 时间 -->
+         <input type="date">
+         
+         <!-- html5新增 -->
+         <input type="email" placeholder="email">
+         <input type="color">
+         <input type="url" placeholder="url">
+         <input type="range">
+
+         <fieldset>
+             <label>
+                    <legend>密码</legend>
+                    <input id="" type="password">
+             </label>             
+         </fieldset>
+
+         <fieldset>
+                    <legend>密码</legend>
+                    <input id="" type="password">            
+        </fieldset>
+
+        <button type="submit">登陆</button>
+        <input type="submit" value="登陆">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表格</title>
+</head>
+<body>
+    <!-- 
+        表格标签：table
+        单元格：td
+        若单元格之中的内容需要加粗时使用：th（th表示标题）
+        行：tr
+        列：
+
+     -->
+     <!-- 
+         border:设置边框线
+         width:设置宽度
+         cellspacing:单元格与单元格之间的距离
+         cellpadding:单元格之间的内部区域
+      -->
+    <table border="1" width="600" cellspacing="0" cellpadding="10">
+        <!-- 第一行：大时间 -->
+        <tr>
+            <td>时间</td>
+            <td>星期一</td>
+            <td>星期二</td>
+            <td>星期三</td>
+        </tr>
+
+        <!-- 第二行：小时间——上午 -->
+        <tr>
+                <td>上午</td>
+                <td>html</td>
+                <td>css</td>
+                <td>js</td>
+        </tr>
+
+        <!-- 第三行：小时间——下午 -->
+        <tr>
+                <td>下午</td>
+                <td>练习</td>
+                <td>练习</td>
+                <td>练习</td>
+        </tr>
+    </table>
+<br><br><br><hr><br><br><br>
+
+   <!-- 
+        单元格的合并:
+            在td之中进行设置
+            横向合并colspan="",引号之中加需要合并后所占的单元格数目，如合并一个单元格，便在引号之中填入2
+            纵向合并rowspan=""
+            居中：align="center"  
+            (右：right  左:left  justify:对行进行伸展，这样每行都可以有相等的长度（就像在报纸和杂志中）)
+            添加颜色：bgcolor=""
+    -->
+    <table border="1" width="600" cellspacing="0" cellpadding="10">
+            <!-- 第一行：大时间 -->
+            <tr>
+                <td  colspan="2">时间</td>
+                <td>星期一</td>
+                <td>星期二</td>
+                <td>星期三</td>
+            </tr>
+    
+            <!-- 第二行：小时间——上午 -->
+            <tr>
+                    <td>上午</td>
+                    <td>html</td>
+                    <td colspan="2">css</td>
+                    <td>js</td>
+            </tr>
+    
+            <!-- 第三行：小时间——下午 -->
+            <tr>
+                    <td>下午</td>
+                    <td>练习</td>
+                    <td>练习</td>
+                    <td>练习</td>
+            </tr>
+        </table>
+
+        <!-- 一个表格的完整结构 -->
+    <table>
+        <!-- 头部 -->
+        <thead>       
+             <tr>
+                <td></td>
+            </tr>
+        </thead>
+
+        <!-- body -->
+        <tbody>
+                <tr>
+                        <td></td>
+                </tr>
+            
+        </tbody>
+
+        <!-- 底部 -->
+        <tfoot>
+            <tr>
+                <td></td>
+            </tr>
+        </tfoot>
+
+    </table>
+    
+</body>
+</html>
